@@ -1,8 +1,6 @@
 const { themes } = require('prism-react-renderer')
 const lightTheme = themes.github
 const darkTheme = themes.dracula
-const math = require('remark-math')
-const katex = require('rehype-katex')
 const navbar = require('./docusaurus.config.navbars')
 
 const HOST = 'https://www.naaran.com'
@@ -27,15 +25,11 @@ const config = {
           routeBasePath: '/',
           path: 'docs',
           sidebarPath: require.resolve('./docusaurus.config.sidebars.js'),
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
         },
         blog: {
           routeBasePath: '/blog',
           path: 'blog',
           showReadingTime: true,
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
           blogSidebarCount: 20,
           blogSidebarTitle: '最新文章',
         },
@@ -48,12 +42,6 @@ const config = {
         }
       }
     ]
-  ],
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css',
-      type: 'text/css'
-    }
   ],
   themeConfig: {
     navbar,

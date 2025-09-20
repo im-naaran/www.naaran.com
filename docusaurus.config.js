@@ -83,6 +83,13 @@ const config = {
   ],
   headTags: [
     {
+      tagName: 'meta',
+      attributes: {
+        name: 'baidu-site-verification',
+        content: 'codeva-iIlYvv0UuU',
+      },
+    },
+    {
       tagName: 'script',
       innerHTML: `
 if ('serviceWorker' in navigator && 'caches' in window) {

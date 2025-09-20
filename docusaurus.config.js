@@ -58,7 +58,7 @@ const config = {
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} yukaPriL. Built with Docusaurus.`
+      copyright: `Copyright © ${new Date().getFullYear()} Naaran. Built with Docusaurus.`
     },
     prism: {
       theme: lightTheme,
@@ -66,12 +66,13 @@ const config = {
       additionalLanguages: ['bash', 'diff', 'json'],
     },
     algolia: {
-      appId: 'WVWYYBVS2P',
-      apiKey: '11381652305be8b9f002fc1fad8fcb49',  // 只读 API Key（不是管理员 Key）
-      indexName: 'Blog',
+      appId: 'YIOL05U7L5',
+      apiKey: '8984f17ffb8ad373bc0a40788f6bb2d3',  // 只读 API Key（不是管理员 Key）
+      indexName: 'blog',
       contextualSearch: false, // 是否开启上下文搜索
       searchParameters: {}, // 可选：传递给 Algolia API 的搜索参数
       insights: true, // 是否启用 Algolia Insights（可选）
+      // askAi: 'YOUR_ALGOLIA_ASSISTANT_ID', // TODO: Replace with your Algolia Assistant ID
     },
   },
   markdown: {

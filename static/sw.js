@@ -1,8 +1,8 @@
 let CACHE_NAME = ''
 // 使用正则表达式数组匹配需要缓存的资源路径
 const CACHE_PATTERNS = [
-  /www.yukapril.com\/assets\/.+/,
-  /www.yukapril.com\/img\/.+/,
+  /naaran.com\/assets\/.+/,
+  /naaran.com\/img\/.+/,
   /cdn.jsdelivr.net\/npm\/.+/
 ]
 

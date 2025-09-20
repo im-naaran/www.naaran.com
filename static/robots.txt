@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.yukapril.com/sitemap.xml 
+Sitemap: https://naaran.com/sitemap.xml 

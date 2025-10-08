@@ -25,6 +25,8 @@ const config = {
           routeBasePath: '/',
           path: 'docs',
           sidebarPath: require.resolve('./docusaurus.config.sidebars.js'),
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: false,
         },
         blog: {
           routeBasePath: '/blog',

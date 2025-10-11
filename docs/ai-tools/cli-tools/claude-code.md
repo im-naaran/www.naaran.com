@@ -14,6 +14,10 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，通过命令行界面为�
 
 以及使用 Claude Code Router<sup>[[4]](#参考)</sup> （CCR）进行中转，这样可以兼容大部分模型。
 
+## 体验
+
+Claude Code 上手相对容易，`/` 命令也不多，功能也比较清晰。虽然不如 Gemini CLI 功能强大，但周边生态、MCP 等适配资源也非常丰富。支持粘贴图片进行对话（需要模型也支持，国内K2 模型不支持图片），上下文控制也还可以。非要说问题的话，就是历史会话管理缺失，好像只能恢复到上一次会话场景。不过 CC 有历史记录文件，也有第三方工具来实现这个功能，估计未来 CC 官方也会加上。
+
 ## 系统要求
 
 - Node.js 18 或更新版本
@@ -25,9 +29,15 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，通过命令行界面为�
 
 ## 安装
 
-> 如果是第三方中转平台，以平台为准，可能会安装定制版 npm 包。请参考第三方中转平台教程。
+:::warning 特别注意
 
-如果是官方、正规代理第三方中转平台、还有兼容 CC 的平台、以及 CCR 方案，可参考本方案进行安装。
+如果是第三方中转平台，以平台为准，可能会安装定制版 npm 包。请参考第三方中转平台教程。
+
+现在非常不推荐使用定制版 npm 包了，容易存在安全隐患。现在绝大部分中转平台都支持官方 CC 包。
+
+:::
+
+官方、第三方中转平台、还有兼容 CC 的平台、以及 CCR 方案，可参考本方案进行安装。
 
 哪种方案，都是安装标准的 CC 工具：
 
@@ -83,14 +93,10 @@ claude
 # Moonshot 配置
 export ANTHROPIC_BASE_URL="https://api.moonshot.cn/anthropic"
 export ANTHROPIC_AUTH_TOKEN="sk-********"
-export ANTHROPIC_MODEL="kimi-k2-0905-preview"
-export ANTHROPIC_SMALL_FAST_MODEL="kimi-k2-0905-preview"
 
 # 智普配置
 export ANTHROPIC_BASE_URL="https://open.bigmodel.cn/api/anthropic"
 export ANTHROPIC_AUTH_TOKEN="sk-********"
-export ANTHROPIC_MODEL="glm-4.5"
-export ANTHROPIC_SMALL_FAST_MODEL="glm-4.5"
 ```
 
 2. 运行启动命令：

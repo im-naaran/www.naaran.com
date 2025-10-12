@@ -10,9 +10,9 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，通过命令行界面为�
 
 有第三方代理中转平台，大概 299 人民币起步，计费方式大致为：每天有固定上限点数，每小时自动回复点数。
 
-还有兼容 Claude Code （CC）的正规平台，如 Moonshot<sup>[[2]](#参考)</sup>、智普<sup>[[3]](#参考)</sup>。
+还有兼容 Claude Code （CC）的正规平台，如 Moonshot<sup>[[2]](#参考)</sup>、智普<sup>[[3]](#参考)</sup>、DeepSeek<sup>[[4]](#参考)</sup>。
 
-以及使用 Claude Code Router<sup>[[4]](#参考)</sup> （CCR）进行中转，这样可以兼容大部分模型。
+以及使用 Claude Code Router<sup>[[5]](#参考)</sup> （CCR）进行中转，这样可以兼容大部分模型。
 
 ## 体验
 
@@ -97,6 +97,14 @@ export ANTHROPIC_AUTH_TOKEN="sk-********"
 # 智普配置
 export ANTHROPIC_BASE_URL="https://open.bigmodel.cn/api/anthropic"
 export ANTHROPIC_AUTH_TOKEN="sk-********"
+
+# DeepSeek 配置
+export ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
+export ANTHROPIC_AUTH_TOKEN=${DEEPSEEK_API_KEY}
+export API_TIMEOUT_MS=600000 # deepseek 建议配置更长的时间
+export ANTHROPIC_MODEL=deepseek-chat
+export ANTHROPIC_SMALL_FAST_MODEL=deepseek-chat
+export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 ```
 
 2. 运行启动命令：
@@ -152,4 +160,6 @@ ccr code
 
 [3]&nbsp;[智普 - 接入 Claude Code](https://docs.bigmodel.cn/cn/guide/develop/claude)
 
-[4]&nbsp;[GitHub - claude-code-router](https://github.com/musistudio/claude-code-router)
+[4]&nbsp;[DeepSeek - Anthropic API](https://api-docs.deepseek.com/zh-cn/guides/anthropic_api)
+
+[5]&nbsp;[GitHub - claude-code-router](https://github.com/musistudio/claude-code-router)

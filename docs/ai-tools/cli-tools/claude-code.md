@@ -10,9 +10,9 @@ Claude Code 是 Anthropic 推出的 AI 编程助手，通过命令行界面为�
 
 有第三方代理中转平台，大概 299 人民币起步，计费方式大致为：每天有固定上限点数，每小时自动回复点数。
 
-还有兼容 Claude Code （CC）的正规平台，如 Moonshot<sup>[[2]](#参考)</sup>、智普<sup>[[3]](#参考)</sup>、DeepSeek<sup>[[4]](#参考)</sup>。
+还有兼容 Claude Code （CC）的正规平台，如 Moonshot<sup>[[2]](#参考)</sup>、智普<sup>[[3]](#参考)</sup>、DeepSeek<sup>[[4]](#参考)</sup>、Doubao<sup>[[5]](#参考)</sup>。
 
-以及使用 Claude Code Router<sup>[[5]](#参考)</sup> （CCR）进行中转，这样可以兼容大部分模型。
+以及使用 Claude Code Router<sup>[[6]](#参考)</sup> （CCR）进行中转，这样可以兼容大部分模型。
 
 ## 体验
 
@@ -47,7 +47,54 @@ npm install -g @anthropic-ai/claude-code
 npm install -g @anthropic-ai/claude-code --registry https://registry.npmmirror.com
 ```
 
-## 环境变量配置方法
+## 使用 NCF 配置工具
+
+现在有了好的管理工具：NCF<sup>[[7]](#参考)</sup>。这样可以省去手动切换。
+
+它可以实现配置多个路由，方便随时切换，也支持自动安装 CC、CCR。同时带有一些工作流和输出风格的配置。
+
+只需要指定 `npx ncf` 即可。即可看到下面的使用指引。
+
+```
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║   ███████╗  ██████╗ ███████╗                                   ║
+║       ██╔╝  ██╔═══╝  ██╔═══╝                                   ║
+║      ██╔╝   ██║      █████╗                                    ║
+║    ██╔╝     ██║      ██╔══╝                                    ║
+║   ███████╗  ╚██████╗ ██║                                       ║
+║   ╚══════╝   ╚═════╝ ╚═╝        for Claude Code                ║
+║                                                                ║
+║   Zero-Config Code Flow                                        ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+  Version: 3.3.1  |  https://github.com/UfoMiao/zcf
+
+请选择功能
+  -------- Claude Code --------
+  1. 完整初始化 - 安装 Claude Code + 导入工作流 + 配置 API 或 CCR 代理 + 配置 MCP 服务
+  2. 导入工作流 - 仅导入/更新工作流相关文件
+  3. 配置 API 或 CCR 代理 - 配置 API URL、认证信息或 CCR 代理
+  4. 配置 MCP - 配置 MCP 服务（含 Windows 修复）
+  5. 配置默认模型 - 设置默认模型（opus/sonnet/sonnet 1m/自定义）
+  6. 配置 Claude 全局记忆 - 配置 AI 输出语言和输出风格
+  7. 导入推荐环境变量和权限配置 - 导入隐私保护环境变量和系统权限配置
+
+  --------- 其他工具 ----------
+  R. CCR - 配置 Claude Code Router 以使用多个 AI 模型
+  U. ccusage - Claude Code 用量分析
+  L. CCometixLine - 基于 Rust 的高性能 Claude Code 状态栏工具，集成 Git 信息和实时使用量跟踪
+
+  ------------ ZCF ------------
+  0. 更改显示语言 / Select display language - 更改 ZCF 界面语言
+  S. 切换代码工具 - 在支持的代码工具之间切换 (Claude Code, Codex)
+  -. 卸载和删除配置 - 从系统中删除 Claude Code 配置和工具
+  +. 检查更新 - 检查并更新 Claude Code、CCR 和 CCometixLine 的版本
+  Q. 退出
+```
+
+## 环境变量配置方法（传统）
 
 不同系统配置方法不同，大致如下：
 
@@ -162,4 +209,8 @@ ccr code
 
 [4]&nbsp;[DeepSeek - Anthropic API](https://api-docs.deepseek.com/zh-cn/guides/anthropic_api)
 
-[5]&nbsp;[GitHub - claude-code-router](https://github.com/musistudio/claude-code-router)
+[5]&nbsp;[Doubao - 配置编程工具](https://www.volcengine.com/docs/82379/1928261)
+
+[6]&nbsp;[GitHub - claude-code-router](https://github.com/musistudio/claude-code-router)
+
+[7]&nbsp;[GitHub - zcf](https://github.com/UfoMiao/zcf)

@@ -36,7 +36,7 @@ Cursor 的 Tab 是非常好用的，其他 IDE 我还没见过这么精准的。
 
 最近开始，如果使用了高级模型，那么他会默认做很多事情，如分析、研究、写代码、写测试用例、总结、总结到文件等。但是如果切换到 Auto 模型，那基本上就是只会按你的要求尽快开发写代码，不会啰嗦。
 
-2025年10月，Cursor 2.0，也支持 Agents / Editor 模式切换了，Agents 就是给初级用户直接编写提示词来实现项目的，其他 IDE 也出现过，如 TRAE 的 SOLO 模式等。还推出了自有模型 `Composer 1`。在双十一当天免费体验一天，感受了下。质量我感觉大致是 `Claude 3.7 sonnet` 左右吧，但是价格却和 `Claude 4.5 sonnet` 一样。唯独最明显的就是 TPS(Tokens per second) 速度特别快。我感觉 `Claude 4.5` 大致是 100 TPS，`Composer 1` 思考速度 100 TPS，代码输出速度 300 TPS。明显比其他模型快很多。
+2025年10月，Cursor 2.0，也支持 Agents / Editor 模式切换了，Agents 就是给初级用户直接编写提示词来实现项目的，其他 IDE 也出现过，如 TRAE 的 SOLO 模式等。还推出了自有模型 `Composer 1`。在双十一当天免费体验一天，感受了下。质量我感觉大致是 `Claude 3.7 sonnet` 左右吧，但是价格却和 Gemini 2.5 Pro 一样，比 `Claude 4.5 sonnet` 稍便宜一些。唯独最明显的就是 TPS(Tokens per second) 速度特别快。我感觉 `Claude 4.5` 大致是 100 TPS，`Composer 1` 代码输出速度 300 TPS。明显比其他模型快很多。
 
 Cursor 是整体来说比较好用的 IDE，没有明显的短板和问题，支持 MCP 和项目独立规则，可选 Claude GPT Gemini 等多种模型，而且接入新模型速度极快。
 

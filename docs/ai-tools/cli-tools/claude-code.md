@@ -94,6 +94,12 @@ npm install -g @anthropic-ai/claude-code --registry https://registry.npmmirror.c
   Q. 退出
 ```
 
+## 使用 CC-Switch 配置工具
+
+如果不希望使用 NCF，觉得它功能太多了，还可以使用 CC-Switch<sup>[[8]](#参考)</sup> 进行 API 配置，CC-Switch 是带有界面的工具。
+
+具体可以参考官方的介绍文档，由于带有页面，使用比较简单。
+
 ## 环境变量配置方法（传统）
 
 不同系统配置方法不同，大致如下：
@@ -214,3 +220,5 @@ ccr code
 [6]&nbsp;[GitHub - claude-code-router](https://github.com/musistudio/claude-code-router)
 
 [7]&nbsp;[GitHub - zcf](https://github.com/UfoMiao/zcf)
+
+[8]&nbsp;[GitHub - cc-switch](https://github.com/farion1231/cc-switch)

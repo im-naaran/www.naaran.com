@@ -98,14 +98,39 @@ if ('serviceWorker' in navigator && 'caches' in window) {
   // 只在生产环境中注册 Service Worker
   if (window.location.hostname !== 'localhost') {
     console.log('[Service Worker] 注册启动')
+    
+    // 生成版本号：使用构建时时间戳（会被脚本自动更新）
+    const SW_VERSION = 'SW_1732099200000'
+    
     navigator.serviceWorker.register('/sw.js').then(function (registration) {
       console.log('[Service Worker] 注册成功:', registration.scope)
-      if (registration.active) {
-        registration.active.postMessage({
-          type: 'SW_NAME',
-          payload: 'SW_${new Date().getTime()}'
-        })
+      
+      // 发送版本信息给 SW
+      const sendMessage = () => {
+        if (registration.active) {
+          registration.active.postMessage({
+            type: 'SW_NAME',
+            payload: SW_VERSION
+          })
+        }
       }
+      
+      // 立即发送
+      sendMessage()
+      
+      // 监听 SW 更新
+      registration.addEventListener('updatefound', () => {
+        const newWorker = registration.installing
+        console.log('[Service Worker] 发现新版本')
+        newWorker.addEventListener('statechange', () => {
+          if (newWorker.state === 'activated') {
+            console.log('[Service Worker] 新版本已激活，清理旧缓存')
+            sendMessage()
+            // 刷新页面以使用新的 SW
+            window.location.reload()
+          }
+        })
+      })
     }).catch(function (err) {
       console.log('[Service Worker] 注册失败:', err)
     })

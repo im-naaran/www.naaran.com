@@ -29,7 +29,26 @@ self.addEventListener('install', () => {
 })
 
 // ======= 清理旧缓存 =======
-self.addEventListener('activate', event => { })
+self.addEventListener('activate', event => {
+  console.log('[Service Worker] 正在激活')
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cache => {
+          // 如果缓存名称不是当前的 CACHE_NAME，就删除它
+          if (cache !== CACHE_NAME) {
+            console.log('[Service Worker] 删除旧缓存:', cache)
+            return caches.delete(cache)
+          }
+        })
+      )
+    }).then(() => {
+      // 立即控制所有客户端
+      console.log('[Service Worker] 立即接管所有客户端')
+      return self.clients.claim()
+    })
+  )
+})
 
 // ======= 拦截请求 =======
 self.addEventListener('fetch', event => {

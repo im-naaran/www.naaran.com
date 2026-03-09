@@ -100,7 +100,7 @@ if ('serviceWorker' in navigator && 'caches' in window) {
     console.log('[Service Worker] 注册启动')
     
     // 生成版本号：使用构建时时间戳（会被脚本自动更新）
-    const SW_VERSION = 'SW_1732099200000'
+    const SW_VERSION = 'SW_1773070859614'
     
     navigator.serviceWorker.register('/sw.js').then(function (registration) {
       console.log('[Service Worker] 注册成功:', registration.scope)

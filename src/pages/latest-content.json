@@ -1,0 +1,77 @@
+{
+  "blogs": [
+    {
+      "title": "入手泉盛 UV-K6 手台",
+      "date": "2026-02-11 16:25:00 GMT+0800",
+      "permalink": "/blog/2026/02/11/uvk6",
+      "filename": "2026-02-11-uvk6.md"
+    },
+    {
+      "title": "2025 年小结",
+      "date": "2025-12-24 21:21:00 GMT+0800",
+      "permalink": "/blog/2025/12/24/summary",
+      "filename": "2025-12-24-summary.md"
+    },
+    {
+      "title": "考取中国 A 类业余无线电台操作证",
+      "date": "2025-12-21 21:17:00 GMT+0800",
+      "permalink": "/blog/2025/12/21/crac-a-licence",
+      "filename": "2025-12-21-crac-a-licence.md"
+    },
+    {
+      "title": "博客和知识森林合并了",
+      "date": "2025-02-23 12:05:00 GMT+0800",
+      "permalink": "/blog/2025/02/23/merge",
+      "filename": "2025-02-23-merge.md"
+    },
+    {
+      "title": "Follow 认证测试",
+      "date": "2024-12-19 09:43:00 GMT+0800",
+      "permalink": "/blog/2024/12/19/follow",
+      "filename": "2024-12-19-follow.md"
+    }
+  ],
+  "docs": [
+    {
+      "title": "claude-code",
+      "category": "ai-tools",
+      "permalink": "/ai-tools/cli-tools/claude-code",
+      "description": "",
+      "lastCommitTime": 1763903058000,
+      "relativePath": "ai-tools/cli-tools/claude-code.md"
+    },
+    {
+      "title": "droid",
+      "category": "ai-tools",
+      "permalink": "/ai-tools/cli-tools/droid",
+      "description": "",
+      "lastCommitTime": 1763903058000,
+      "relativePath": "ai-tools/cli-tools/droid.md"
+    },
+    {
+      "title": "opencode",
+      "category": "ai-tools",
+      "permalink": "/ai-tools/cli-tools/opencode",
+      "description": "",
+      "lastCommitTime": 1763903058000,
+      "relativePath": "ai-tools/cli-tools/opencode.md"
+    },
+    {
+      "title": "codex",
+      "category": "ai-tools",
+      "permalink": "/ai-tools/cli-tools/codex",
+      "description": "",
+      "lastCommitTime": 1763725293000,
+      "relativePath": "ai-tools/cli-tools/codex.md"
+    },
+    {
+      "title": "gemini-cli",
+      "category": "ai-tools",
+      "permalink": "/ai-tools/cli-tools/gemini-cli",
+      "description": "",
+      "lastCommitTime": 1763725293000,
+      "relativePath": "ai-tools/cli-tools/gemini-cli.md"
+    }
+  ],
+  "generatedAt": "2026-03-09T15:40:59.516Z"
+}

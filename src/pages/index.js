@@ -54,7 +54,6 @@ export default function Home () {
           <section className="content-block">
             <div className="section-header">
               <h2>最新文档</h2>
-              <Link to="/keyboard/intro" className="view-all">查看全部 →</Link>
             </div>
             <div className="card-grid">
               {docs.map((doc, index) => (

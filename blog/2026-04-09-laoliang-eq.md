@@ -4,7 +4,7 @@ date: 2026-04-09 19:10:00 GMT+0800
 tags: [认知偏差, 垃圾人定律, 情绪管理, 社交边界, 生存智慧, 韩信胯下之辱, 情商博弈]
 ---
 
-看 [老梁：不分好赖是个情商问题](https://www.youtube.com/watch?v=dOtXFTuohAw&t=3s)，说的很好，AI 总结分享下。
+看 [老梁：不分好赖是个情商问题](https://www.youtube.com/watch?v=dOtXFTuohAw)，说的很好，AI 总结分享下。
 
 <!-- truncate -->
 

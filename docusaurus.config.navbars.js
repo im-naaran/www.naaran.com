@@ -7,27 +7,20 @@ const docusaurusConfigNavbars = {
   items: [
     {
       type: 'docSidebar',
-      label: 'AI工具',
-      sidebarId: 'aiTools',
+      label: 'AI',
+      sidebarId: 'ai',
       position: 'left'
     },
     {
       type: 'dropdown',
-      label: '前端基础',
+      label: '前端',
       position: 'left',
       items: [
         {
           type: 'docSidebar',
-          label: 'Javascript',
+          label: '前端基础',
           sidebarId: 'javascript'
-        }
-      ]
-    },
-    {
-      type: 'dropdown',
-      label: '综合应用',
-      position: 'left',
-      items: [
+        },
         {
           type: 'docSidebar',
           label: '输入框及键盘处理',
@@ -42,21 +35,31 @@ const docusaurusConfigNavbars = {
     },
     {
       type: 'docSidebar',
-      label: '项目部署',
-      sidebarId: 'publishTutorial',
-      position: 'left'
-    },
-    {
-      type: 'docSidebar',
-      label: 'NPM 探索',
-      sidebarId: 'npm',
-      position: 'left'
-    },
-    {
-      type: 'docSidebar',
       label: '机械键盘客制化入门',
       sidebarId: 'keyboard',
       position: 'left'
+    },
+    {
+      type: 'dropdown',
+      label: '探索',
+      position: 'left',
+      items: [
+        {
+          type: 'docSidebar',
+          label: 'AI工具探索',
+          sidebarId: 'aiTools'
+        },
+        {
+          type: 'docSidebar',
+          label: '项目部署探索',
+          sidebarId: 'publishTutorial'
+        },
+        {
+          type: 'docSidebar',
+          label: 'NPM 探索',
+          sidebarId: 'npm'
+        }
+      ]
     },
 
     {

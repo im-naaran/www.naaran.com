@@ -8,7 +8,7 @@ description: AI Passport 是一块基于 ESP32-C3 的 iPhone 消息与音乐辅�
 
 AI Passport 是我制作的一款 iPhone 辅助屏。它运行在 ESP32-C3 小型设备上，通过蓝牙接收 iPhone 通知、显示音乐播放信息，并使用三枚实体按键完成消息浏览、音乐控制和设备设置。
 
-项目已开源，源代码与最新进展可以在 [GitHub：im-naaran/ai-passport-badge](https://github.com/im-naaran/ai-passport-badge) 查看。
+项目已开源，源代码与最新进展可以在 [GitHub：im-naaran/ai-passport-phone](https://github.com/im-naaran/ai-passport-phone) 查看。
 
 它不是一台缩小版手机，也不打算把复杂 App 搬到小屏幕上。它更像一个放在手边的信息窗口：收到消息时抬眼看一下，听音乐时伸手按一下，尽量减少频繁拿起手机带来的打断。
 
